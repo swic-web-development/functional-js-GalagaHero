@@ -41,8 +41,16 @@ console.log(doubledNumbers1)
 // `map` method
 const numbers2 = [1,2,3,4,5]
 
-const doubledNumbers2 = numbers.map(function (number) {
+const doubledNumbers2 = numbers2.map(function (number) {
     return number * 2
 })
 
 console.log(doubledNumbers2)
+
+// `map` method with arrow function
+const numbers3 = [1,2,3,4,5]
+
+const doubledNumbers3 = numbers3.map((number) => number * 2
+)
+
+console.log(doubledNumbers3)
