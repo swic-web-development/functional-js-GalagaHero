@@ -70,7 +70,11 @@ function calculateOrderCost(order) {
 const newAmmo = backpackFullOfAmmo.map((ammo) => {
     console.log(ammo)
 
-    return `${ammo.item}: ${ammo.quantity * 2}`
-})
+    return `<tr>
+    <td> Item: ${ammo.item} </td>
+    <td> Quantity: ${ammo.quantity} </td>
+    <td> Price: ${ammo.priceEa} </td>
+    </tr>`
+}).join('\n')
 
 console.log(newAmmo)
