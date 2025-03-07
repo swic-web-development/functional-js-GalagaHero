@@ -54,3 +54,23 @@ const doubledNumbers3 = numbers3.map((number) => number * 2
 )
 
 console.log(doubledNumbers3)
+
+// backpack full of ammo and `map` method
+const backpackFullOfAmmo = [
+    { item: 'bullets', quantity: 10, priceEa: 0.5 },
+    { item: 'shotgun shells', quantity: 4, priceEa: 0.5 },
+    { item: 'rockets', quantity: 1, priceEa: 5.0 },
+    { item: 'energy cell units', quantity: 20, priceEa: 0.2 },
+]
+
+function calculateOrderCost(order) {
+    return order.quantity * order.priceEa
+}
+
+const newAmmo = backpackFullOfAmmo.map((ammo) => {
+    console.log(ammo)
+
+    return `${ammo.item}: ${ammo.quantity * 2}`
+})
+
+console.log(newAmmo)
