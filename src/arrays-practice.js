@@ -26,6 +26,13 @@ const firstPlayerWithMoreFragsThanDeaths = players.find((player) => {
 
 console.log(firstPlayerWithMoreFragsThanDeaths)
 
+const hasFrags = players.some((player) => {
+    return player.frags
+})
+
+console.log(hasFrags)
+
+console.log("") // adds an empty line between the two
 
 // numbers array
 const numbers = [1, 2, 3, 4, 5]
