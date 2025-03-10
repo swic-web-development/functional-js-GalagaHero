@@ -66,3 +66,8 @@ const monsters = [
 
   console.log('')
   console.log('Task 4: Use the sort method to arrange the monsters from highest damage to lowest')
+  // sort monsters in descending order (b to a) by amount of damage
+  const monsterDamageSorted = monsters.sort((a, b) => {
+    return b.damage - a.damage
+  })
+  console.log(monsterDamageSorted)
