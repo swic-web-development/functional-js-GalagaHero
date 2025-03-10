@@ -32,6 +32,12 @@ const hasFrags = players.some((player) => {
 
 console.log(hasFrags)
 
+const allPlayersWithMoreFragsThanDeaths = players.every((player) => {
+    return player.frags > player.deaths
+})
+
+console.log(allPlayersWithMoreFragsThanDeaths)
+
 console.log("") // adds an empty line between the two
 
 // numbers array
