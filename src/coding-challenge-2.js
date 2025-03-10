@@ -41,7 +41,12 @@ const monsters = [
   ];
 
   console.log('Task 1: Use the map method to create a new array containing just the names of the monsters')
-
+  // create a new array with just monster names
+  const monsterNames = monsters.map((monster) => {
+    return monster.name
+  })
+  // output new array
+  console.log(monsterNames)
 
   console.log('') //I use these to separate tasks
   console.log('Task 2: Use the filter method to find all monsters with health greater than 150')
