@@ -50,7 +50,11 @@ const monsters = [
 
   console.log('') //I use these to separate tasks
   console.log('Task 2: Use the filter method to find all monsters with health greater than 150')
- 
+  //create new array of only monsters with more than 150 health
+  const monsterHealthHigherThan150 = monsters.filter((monster) => {
+    return monster.health > 150
+  })
+  console.log(monsterHealthHigherThan150)
 
   console.log('')
   console.log('Task 3: Use the reduce method to calculate the total health of all monsters')
