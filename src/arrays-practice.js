@@ -29,6 +29,7 @@ console.log(firstPlayerWithMoreFragsThanDeaths)
 
 // numbers array
 const numbers = [1, 2, 3, 4, 5]
+
 const sum = numbers.reduce((accumulator, currentVal) => {
     console.log(`Accumulator: ${accumulator}, Current Value: ${currentVal}`)
 
@@ -40,4 +41,11 @@ console.log(sum)
 const firstOddNumber = numbers.find((number) => {
     return number % 2
 })
+
 console.log(firstOddNumber)
+
+const hasOddNumber = numbers.some((number) => {
+    return number % 2
+})
+
+console.log(hasOddNumber)
