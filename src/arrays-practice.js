@@ -68,3 +68,14 @@ const allOddNumbers = numbers.every((number) => {
 })
 
 console.log(allOddNumbers)
+
+console.log("") // adds an empty line between the two
+
+// numbers2 array
+const numbers2 = [5, 3, 8, 1, 2]
+
+const sortedNumbers = numbers2.sort((a, b) => {
+    return a - b
+})
+
+console.log(sortedNumbers)
