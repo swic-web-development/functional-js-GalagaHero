@@ -75,6 +75,8 @@ console.log("") // adds an empty line between the two
 const numbers2 = [5, 3, 8, 1, 2]
 
 const sortedNumbers = numbers2.sort((a, b) => {
+    console.log(`Now comparing a: ${a}, b: ${b}`)
+
     return a - b
 })
 
