@@ -38,6 +38,12 @@ const allPlayersWithMoreFragsThanDeaths = players.every((player) => {
 
 console.log(allPlayersWithMoreFragsThanDeaths)
 
+const sortedPlayers = players.sort((a, b) => {
+    return b.frags - a.frags
+})
+
+console.log(sortedPlayers)
+
 console.log("") // adds an empty line between the two
 
 // numbers array
