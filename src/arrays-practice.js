@@ -13,3 +13,12 @@ const playsWithMoreFragsThanDeaths = players.filter((player) => {
 })
 
 console.log(playsWithMoreFragsThanDeaths)
+
+const numbers = [1, 2, 3, 4, 5]
+const sum = numbers.reduce((accumulator, currentVal) => {
+    console.log(`Accumulator: ${accumulator}, Current Value: ${currentVal}`)
+
+    return accumulator + currentVal
+}, 0)
+
+console.log(sum)
