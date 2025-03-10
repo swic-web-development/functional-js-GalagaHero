@@ -35,3 +35,10 @@ const firstOddNumber = numbers.find((number) => {
     return number % 2
 })
 console.log(firstOddNumber)
+
+// using players array of objects from above
+const firstPlayerWithMoreFragsThanDeaths = players.find((player) => {
+    return player.frags > player.deaths
+})
+
+console.log(firstPlayerWithMoreFragsThanDeaths)
