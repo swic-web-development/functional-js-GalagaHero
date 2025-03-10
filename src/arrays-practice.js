@@ -29,3 +29,9 @@ const totalFrags = players.reduce((total, player) => {
 }, 0)
 
 console.log(totalFrags)
+
+// using numbers array from above
+const firstOddNumber = numbers.find((number) => {
+    return number % 2
+})
+console.log(firstOddNumber)
