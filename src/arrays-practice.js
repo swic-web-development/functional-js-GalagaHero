@@ -22,3 +22,10 @@ const sum = numbers.reduce((accumulator, currentVal) => {
 }, 0)
 
 console.log(sum)
+
+// using players array of objects from above
+const totalFrags = players.reduce((total, player) => {
+    return total + player.frags
+}, 0)
+
+console.log(totalFrags)
