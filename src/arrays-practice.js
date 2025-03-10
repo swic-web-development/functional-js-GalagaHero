@@ -1,4 +1,4 @@
-
+// players array
 const players = [
   { name: 'DoomGuy', frags: 25, deaths: 0 },
   { name: 'Slayer', frags: 25, deaths: 1 },
@@ -14,6 +14,20 @@ const playsWithMoreFragsThanDeaths = players.filter((player) => {
 
 console.log(playsWithMoreFragsThanDeaths)
 
+const totalFrags = players.reduce((total, player) => {
+    return total + player.frags
+}, 0)
+
+console.log(totalFrags)
+
+const firstPlayerWithMoreFragsThanDeaths = players.find((player) => {
+    return player.frags > player.deaths
+})
+
+console.log(firstPlayerWithMoreFragsThanDeaths)
+
+
+// numbers array
 const numbers = [1, 2, 3, 4, 5]
 const sum = numbers.reduce((accumulator, currentVal) => {
     console.log(`Accumulator: ${accumulator}, Current Value: ${currentVal}`)
@@ -23,22 +37,7 @@ const sum = numbers.reduce((accumulator, currentVal) => {
 
 console.log(sum)
 
-// using players array of objects from above
-const totalFrags = players.reduce((total, player) => {
-    return total + player.frags
-}, 0)
-
-console.log(totalFrags)
-
-// using numbers array from above
 const firstOddNumber = numbers.find((number) => {
     return number % 2
 })
 console.log(firstOddNumber)
-
-// using players array of objects from above
-const firstPlayerWithMoreFragsThanDeaths = players.find((player) => {
-    return player.frags > player.deaths
-})
-
-console.log(firstPlayerWithMoreFragsThanDeaths)
