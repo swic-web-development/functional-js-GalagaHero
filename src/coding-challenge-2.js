@@ -58,6 +58,11 @@ const monsters = [
 
   console.log('')
   console.log('Task 3: Use the reduce method to calculate the total health of all monsters')
+  // create a sum using the running total of all previous health values and the current health value
+  const monsterTotalHealth = monsters.reduce((runningTotal, currentHealth) => {
+    return runningTotal + currentHealth
+  })
+  console.log(monsterTotalHealth)
 
   console.log('')
   console.log('Task 4: Use the sort method to arrange the monsters from highest damage to lowest')
