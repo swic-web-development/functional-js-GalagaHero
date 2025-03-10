@@ -7,3 +7,9 @@ const backpackFullOfAmmo = [
   ];
 
   console.log('Task: How would we calculate the total value of the backpack?')
+  // using reduce method to get the sum of array's priceEa
+  const totalBackpackPrice = backpackFullOfAmmo.reduce((runningTotal, currentPriceEa) => {
+    return runningTotal + currentPriceEa
+  })
+  // output total to console
+  console.log(totalBackpackPrice)
