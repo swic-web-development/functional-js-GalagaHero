@@ -56,3 +56,9 @@ const hasOddNumber = numbers.some((number) => {
 })
 
 console.log(hasOddNumber)
+
+const allOddNumbers = numbers.every((number) => {
+    return number % 2
+})
+
+console.log(allOddNumbers)
