@@ -7,7 +7,7 @@ const backpackFullOfAmmo = [
   ];
 
   console.log('Task: How would we calculate the total value of the backpack?')
-  // using reduce method to get the sum of array's priceEa
+  // using reduce method to get the sum of array's 'priceEa multiplied by quantity'
   const totalBackpackPrice = backpackFullOfAmmo.reduce((runningTotal, currentAmmo) => {
     currentAmmoPrice = currentAmmo.priceEa * currentAmmo.quantity
     return runningTotal + currentAmmoPrice
